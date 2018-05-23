@@ -60,32 +60,32 @@ virtual_links:
       - "vdu01:ens3"
       - "cpmgmt"
   - id: "s11"
-    connectivity_type: "E-LAN"
+    connectivity_type: "E-Line"
     connection_points_reference:
       - "vdu01:ens4"
       - "cps11"
   - id: "s1mme"
-    connectivity_type: "E-LAN"
+    connectivity_type: "E-Line"
     connection_points_reference:
       - "vdu01:ens5"
       - "cps1mme"
   - id: "s1u"
-    connectivity_type: "E-LAN"
+    connectivity_type: "E-Line"
     connection_points_reference:
       - "vdu01:ens6"
       - "cps1u"
   - id: "s5"
-    connectivity_type: "E-LAN"
+    connectivity_type: "E-Line"
     connection_points_reference:
       - "vdu01:ens7"
       - "cps5"
   - id: "dia"
-    connectivity_type: "E-LAN"
+    connectivity_type: "E-Line"
     connection_points_reference:
       - "vdu01:ens8"
       - "cpdia"
   - id: "sgi"
-    connectivity_type: "E-LAN"
+    connectivity_type: "E-Line"
     connection_points_reference:
       - "vdu01:ens9"
       - "cpsgi"
