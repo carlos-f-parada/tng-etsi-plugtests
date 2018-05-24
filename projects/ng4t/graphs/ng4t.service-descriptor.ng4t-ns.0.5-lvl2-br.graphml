@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="label" attr.type="string" for="edge" id="d8" />
+  <key attr.name="level" attr.type="long" for="edge" id="d7" />
+  <key attr.name="type" attr.type="string" for="edge" id="d6" />
+  <key attr.name="node_label" attr.type="string" for="node" id="d5" />
+  <key attr.name="node_id" attr.type="string" for="node" id="d4" />
+  <key attr.name="label" attr.type="string" for="node" id="d3" />
+  <key attr.name="parent_id" attr.type="string" for="node" id="d2" />
+  <key attr.name="level" attr.type="long" for="node" id="d1" />
+  <key attr.name="type" attr.type="string" for="node" id="d0" />
+  <graph edgedefault="undirected">
+    <node id="vnf_ng40:cps11">
+      <data key="d0">iface</data>
+      <data key="d1">1</data>
+      <data key="d2">ng4t.service-descriptor.ng4t-ns.0.5</data>
+      <data key="d3">cps11</data>
+      <data key="d4">ng4t.ng40-vtester.0.5</data>
+      <data key="d5">ng40-vtester</data>
+    </node>
+    <node id="nscps11">
+      <data key="d0">iface</data>
+      <data key="d1">0</data>
+      <data key="d2" />
+      <data key="d3">nscps11</data>
+      <data key="d4">ng4t.service-descriptor.ng4t-ns.0.5</data>
+      <data key="d5">ng4t-ns</data>
+    </node>
+    <node id="vnf_ng40:cpmgmt">
+      <data key="d0">br-iface</data>
+      <data key="d1">1</data>
+      <data key="d2">ng4t.service-descriptor.ng4t-ns.0.5</data>
+      <data key="d3">cpmgmt</data>
+      <data key="d4">ng4t.ng40-vtester.0.5</data>
+      <data key="d5">ng40-vtester</data>
+    </node>
+    <node id="nscps1u">
+      <data key="d0">iface</data>
+      <data key="d1">0</data>
+      <data key="d2" />
+      <data key="d3">nscps1u</data>
+      <data key="d4">ng4t.service-descriptor.ng4t-ns.0.5</data>
+      <data key="d5">ng4t-ns</data>
+    </node>
+    <node id="nscps5">
+      <data key="d0">iface</data>
+      <data key="d1">0</data>
+      <data key="d2" />
+      <data key="d3">nscps5</data>
+      <data key="d4">ng4t.service-descriptor.ng4t-ns.0.5</data>
+      <data key="d5">ng4t-ns</data>
+    </node>
+    <node id="vnf_ng40:cps5">
+      <data key="d0">iface</data>
+      <data key="d1">1</data>
+      <data key="d2">ng4t.service-descriptor.ng4t-ns.0.5</data>
+      <data key="d3">cps5</data>
+      <data key="d4">ng4t.ng40-vtester.0.5</data>
+      <data key="d5">ng40-vtester</data>
+    </node>
+    <node id="vnf_ng40:cpdia">
+      <data key="d0">iface</data>
+      <data key="d1">1</data>
+      <data key="d2">ng4t.service-descriptor.ng4t-ns.0.5</data>
+      <data key="d3">cpdia</data>
+      <data key="d4">ng4t.ng40-vtester.0.5</data>
+      <data key="d5">ng40-vtester</data>
+    </node>
+    <node id="vnf_ng40:cps1mme">
+      <data key="d0">iface</data>
+      <data key="d1">1</data>
+      <data key="d2">ng4t.service-descriptor.ng4t-ns.0.5</data>
+      <data key="d3">cps1mme</data>
+      <data key="d4">ng4t.ng40-vtester.0.5</data>
+      <data key="d5">ng40-vtester</data>
+    </node>
+    <node id="vnf_ng40:br-mgmt">
+      <data key="d0">bridge</data>
+      <data key="d1">2</data>
+      <data key="d3">br-mgmt</data>
+      <data key="d2">ng4t.ng40-vtester.0.5</data>
+    </node>
+    <node id="nscpsgi">
+      <data key="d0">iface</data>
+      <data key="d1">0</data>
+      <data key="d2" />
+      <data key="d3">nscpsgi</data>
+      <data key="d4">ng4t.service-descriptor.ng4t-ns.0.5</data>
+      <data key="d5">ng4t-ns</data>
+    </node>
+    <node id="vnf_ng40:cpsgi">
+      <data key="d0">iface</data>
+      <data key="d1">1</data>
+      <data key="d2">ng4t.service-descriptor.ng4t-ns.0.5</data>
+      <data key="d3">cpsgi</data>
+      <data key="d4">ng4t.ng40-vtester.0.5</data>
+      <data key="d5">ng40-vtester</data>
+    </node>
+    <node id="nscpdia">
+      <data key="d0">iface</data>
+      <data key="d1">0</data>
+      <data key="d2" />
+      <data key="d3">nscpdia</data>
+      <data key="d4">ng4t.service-descriptor.ng4t-ns.0.5</data>
+      <data key="d5">ng4t-ns</data>
+    </node>
+    <node id="vnf_ng40:vdu01">
+      <data key="d0">iface</data>
+      <data key="d1">2</data>
+      <data key="d2">ng4t.ng40-vtester.0.5</data>
+      <data key="d3">ens4</data>
+      <data key="d4">vdu01</data>
+      <data key="d5">vdu01</data>
+    </node>
+    <node id="nscpmgmt">
+      <data key="d0">br-iface</data>
+      <data key="d1">0</data>
+      <data key="d2" />
+      <data key="d3">nscpmgmt</data>
+      <data key="d4">ng4t.service-descriptor.ng4t-ns.0.5</data>
+      <data key="d5">ng4t-ns</data>
+    </node>
+    <node id="vnf_ng40:cps1u">
+      <data key="d0">iface</data>
+      <data key="d1">1</data>
+      <data key="d2">ng4t.service-descriptor.ng4t-ns.0.5</data>
+      <data key="d3">cps1u</data>
+      <data key="d4">ng4t.ng40-vtester.0.5</data>
+      <data key="d5">ng40-vtester</data>
+    </node>
+    <node id="br-vlmgmt">
+      <data key="d0">bridge</data>
+      <data key="d1">1</data>
+      <data key="d3">br-vlmgmt</data>
+      <data key="d2">ng4t.service-descriptor.ng4t-ns.0.5</data>
+    </node>
+    <node id="nscps1mme">
+      <data key="d0">iface</data>
+      <data key="d1">0</data>
+      <data key="d2" />
+      <data key="d3">nscps1mme</data>
+      <data key="d4">ng4t.service-descriptor.ng4t-ns.0.5</data>
+      <data key="d5">ng4t-ns</data>
+    </node>
+    <edge source="vnf_ng40:cps11" target="nscps11">
+      <data key="d6">iface</data>
+      <data key="d7">1</data>
+      <data key="d8">vls11</data>
+    </edge>
+    <edge source="vnf_ng40:cps11" target="vnf_ng40:vdu01">
+      <data key="d6">iface</data>
+      <data key="d7">1</data>
+      <data key="d8">s11</data>
+    </edge>
+    <edge source="vnf_ng40:cpmgmt" target="br-vlmgmt">
+      <data key="d6">br-iface</data>
+      <data key="d7">1</data>
+      <data key="d8">vlmgmt</data>
+    </edge>
+    <edge source="vnf_ng40:cpmgmt" target="vnf_ng40:br-mgmt">
+      <data key="d8">mgmt</data>
+    </edge>
+    <edge source="nscps1u" target="vnf_ng40:cps1u">
+      <data key="d6">iface</data>
+      <data key="d7">1</data>
+      <data key="d8">vls1u</data>
+    </edge>
+    <edge source="nscps5" target="vnf_ng40:cps5">
+      <data key="d6">iface</data>
+      <data key="d7">1</data>
+      <data key="d8">vls5</data>
+    </edge>
+    <edge source="vnf_ng40:cps5" target="vnf_ng40:vdu01">
+      <data key="d6">iface</data>
+      <data key="d7">1</data>
+      <data key="d8">s5</data>
+    </edge>
+    <edge source="vnf_ng40:cpdia" target="nscpdia">
+      <data key="d6">iface</data>
+      <data key="d7">1</data>
+      <data key="d8">vldia</data>
+    </edge>
+    <edge source="vnf_ng40:cpdia" target="vnf_ng40:vdu01">
+      <data key="d6">iface</data>
+      <data key="d7">1</data>
+      <data key="d8">dia</data>
+    </edge>
+    <edge source="vnf_ng40:cps1mme" target="nscps1mme">
+      <data key="d6">iface</data>
+      <data key="d7">1</data>
+      <data key="d8">vls1mme</data>
+    </edge>
+    <edge source="vnf_ng40:cps1mme" target="vnf_ng40:vdu01">
+      <data key="d6">iface</data>
+      <data key="d7">1</data>
+      <data key="d8">s1mme</data>
+    </edge>
+    <edge source="vnf_ng40:br-mgmt" target="vnf_ng40:vdu01">
+      <data key="d8">mgmt</data>
+    </edge>
+    <edge source="nscpsgi" target="vnf_ng40:cpsgi">
+      <data key="d6">iface</data>
+      <data key="d7">1</data>
+      <data key="d8">vlsgi</data>
+    </edge>
+    <edge source="vnf_ng40:cpsgi" target="vnf_ng40:vdu01">
+      <data key="d6">iface</data>
+      <data key="d7">1</data>
+      <data key="d8">sgi</data>
+    </edge>
+    <edge source="vnf_ng40:vdu01" target="vnf_ng40:cps1u">
+      <data key="d6">iface</data>
+      <data key="d7">1</data>
+      <data key="d8">s1u</data>
+    </edge>
+    <edge source="nscpmgmt" target="br-vlmgmt">
+      <data key="d6">br-iface</data>
+      <data key="d7">1</data>
+      <data key="d8">vlmgmt</data>
+    </edge>
+  </graph>
+</graphml>

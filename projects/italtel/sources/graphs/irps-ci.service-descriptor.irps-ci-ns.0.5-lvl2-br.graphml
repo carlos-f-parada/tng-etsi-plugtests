@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="type" attr.type="string" for="edge" id="d8" />
+  <key attr.name="level" attr.type="long" for="edge" id="d7" />
+  <key attr.name="label" attr.type="string" for="edge" id="d6" />
+  <key attr.name="level" attr.type="long" for="node" id="d5" />
+  <key attr.name="label" attr.type="string" for="node" id="d4" />
+  <key attr.name="parent_id" attr.type="string" for="node" id="d3" />
+  <key attr.name="type" attr.type="string" for="node" id="d2" />
+  <key attr.name="node_label" attr.type="string" for="node" id="d1" />
+  <key attr.name="node_id" attr.type="string" for="node" id="d0" />
+  <graph edgedefault="undirected">
+    <node id="vnf_irps_ci:cpvl1">
+      <data key="d0">italtel.irps-ci.0.5</data>
+      <data key="d1">irps-ci</data>
+      <data key="d2">iface</data>
+      <data key="d3">irps-ci.service-descriptor.irps-ci-ns.0.5</data>
+      <data key="d4">cpvl1</data>
+      <data key="d5">1</data>
+    </node>
+    <node id="br-vl2">
+      <data key="d3">irps-ci.service-descriptor.irps-ci-ns.0.5</data>
+      <data key="d4">br-vl2</data>
+      <data key="d5">1</data>
+      <data key="d2">bridge</data>
+    </node>
+    <node id="vnf_irps_ci:br-vl2">
+      <data key="d3">italtel.irps-ci.0.5</data>
+      <data key="d4">br-vl2</data>
+      <data key="d5">2</data>
+      <data key="d2">bridge</data>
+    </node>
+    <node id="vnf_irps_ci:cpvl2">
+      <data key="d0">italtel.irps-ci.0.5</data>
+      <data key="d1">irps-ci</data>
+      <data key="d2">br-iface</data>
+      <data key="d3">irps-ci.service-descriptor.irps-ci-ns.0.5</data>
+      <data key="d4">cpvl2</data>
+      <data key="d5">1</data>
+    </node>
+    <node id="vnf_irps_ci:vdu01" />
+    <node id="nscpvl1">
+      <data key="d0">irps-ci.service-descriptor.irps-ci-ns.0.5</data>
+      <data key="d1">irps-ci-ns</data>
+      <data key="d2">iface</data>
+      <data key="d3" />
+      <data key="d4">nscpvl1</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="vnf_irps_ci:vdu02" />
+    <node id="nscpvl2">
+      <data key="d0">irps-ci.service-descriptor.irps-ci-ns.0.5</data>
+      <data key="d1">irps-ci-ns</data>
+      <data key="d2">br-iface</data>
+      <data key="d3" />
+      <data key="d4">nscpvl2</data>
+      <data key="d5">0</data>
+    </node>
+    <node id="vnf_irps_ci:vdu04" />
+    <node id="vnf_irps_ci:vdu03">
+      <data key="d0">vdu03</data>
+      <data key="d4">if0</data>
+      <data key="d1">vdu03</data>
+      <data key="d3">italtel.irps-ci.0.5</data>
+      <data key="d2">br-iface</data>
+      <data key="d5">2</data>
+    </node>
+    <edge source="vnf_irps_ci:cpvl1" target="nscpvl1">
+      <data key="d6">vl1</data>
+      <data key="d7">1</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_irps_ci:cpvl1" target="vnf_irps_ci:vdu01">
+      <data key="d6">vl1</data>
+      <data key="d7">1</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="br-vl2" target="nscpvl2">
+      <data key="d6">vl2</data>
+      <data key="d7">1</data>
+      <data key="d8">br-iface</data>
+    </edge>
+    <edge source="br-vl2" target="vnf_irps_ci:cpvl2">
+      <data key="d6">vl2</data>
+      <data key="d7">1</data>
+      <data key="d8">br-iface</data>
+    </edge>
+    <edge source="vnf_irps_ci:br-vl2" target="vnf_irps_ci:cpvl2">
+      <data key="d6">vl2</data>
+    </edge>
+    <edge source="vnf_irps_ci:br-vl2" target="vnf_irps_ci:vdu01">
+      <data key="d6">vl2</data>
+    </edge>
+    <edge source="vnf_irps_ci:br-vl2" target="vnf_irps_ci:vdu03">
+      <data key="d6">vl2</data>
+    </edge>
+    <edge source="vnf_irps_ci:br-vl2" target="vnf_irps_ci:vdu04">
+      <data key="d6">vl2</data>
+    </edge>
+    <edge source="vnf_irps_ci:br-vl2" target="vnf_irps_ci:vdu02">
+      <data key="d6">vl2</data>
+    </edge>
+  </graph>
+</graphml>

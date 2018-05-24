@@ -33,7 +33,7 @@ connection_points:
 ##
 virtual_links:
   - id: "vl1"
-    connectivity_type: "E-LAN"
+    connectivity_type: "E-Line"
     connection_points_reference:
       - "vnf_irps_ci:cpvl1"
       - "nscpvl1"
