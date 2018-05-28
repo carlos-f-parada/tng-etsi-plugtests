@@ -34,6 +34,61 @@ virtual_deployment_units:
       - id: "if1"
         interface: "ipv4"
         type: "management"
+    user_data: |
+      oam_blob: |
+        ##cloud-config 
+        #set_hostname: oam 
+        #fqdn: oam.default.italtel.com 
+        #ssh_pwauth: true 
+        #system_info: 
+        #  default_user: 
+        #    name: italtel 
+        #    lock_passwd: false 
+        #write_files: 
+        #  - content: | 
+        #      CONFIG_ADDRESS=<OAM IF0 IP ADDRESS>
+        #      OTHER_ADDRESS=<DB IF0 IP ADDRESS> 
+        #      VIRTUAL_INT_ADDRESS=<OAM IF0 IP ADDRESS> 
+        #      VIRTUAL_ADDRESS=<OAM IF1 IP ADDRESS> 
+        #    path: /etc/italtel/vnfc.conf 
+        #    permissions: '0644' 
+        #runcmd: 
+        #  - mkdir -p /etc/italtel/fileBackup 
+        #  - cp -p /etc/hosts /etc/italtel/fileBackup/ 
+        #  - cp -p /etc/resolv.conf /etc/italtel/fileBackup/ 
+        #  - cp -p /etc/corosync/corosync.conf /etc/italtel/fileBackup 
+        #  - cp -p /etc/italtel/haconfig.xml /etc/italtel/fileBackup 
+        #  - cp -p /etc/named.conf /etc/italtel/fileBackup 
+        #  - cp -p /var/named/data/db.default.italtel.com /etc/italtel/fileBackup 
+        #  - cp -p /var/lib/cloud/data/previous-hostname /etc/italtel/fileBakup 
+        #  - hostname > /var/lib/cloud/data/previous-hostname 
+        #  - echo <OAM IF0 IP ADDRESS> oam-config >> /etc/hosts 
+        #  - echo <OAM IF0 IP ADDRESS> oam-virtual-int >> /etc/hosts 
+        #  - echo <OAM IF1 IP ADDRESS> oam-virtual >> /etc/hosts 
+        #  - echo domain default.italtel.com > /etc/resolv.conf 
+        #  - echo nameserver <OAM IF0 IP ADDRESS> >> /etc/resolv.conf 
+        #  - echo 'option timeout:1' >> /etc/resolv.conf 
+        #  - a=$(echo <OAM IF0 NETWORK ADDRESS/CIDR> | cut -f 1 -d/) ; sed -i s/__BINDNETADDR__/$a/g /etc/corosync/corosync.conf 
+        #  - sed -i 's/__SIDEA_ADDR__/<OAM IF0 IP ADDRESS>/g' /etc/corosync/corosync.conf 
+        #  - sed -i 's/__SIDEB_ADDR__/<DB IF0 IP ADDRESS>/g' /etc/corosync/corosync.conf 
+        #  - sed -i 's/__PEER_A_HOSTNAME__/oam/g' /etc/corosync/corosync.conf 
+        #  - sed -i 's/__PEER_B_HOSTNAME__/oam_B/g' /etc/corosync/corosync.conf 
+        #  - sed -i 's/__INTERNAL_VIP__/<OAM IF0 IP ADDRESS>/g' /etc/italtel/haconfig.xml 
+        #  - sed -i 's/__INTERNAL_IF__/eth0/g' /etc/italtel/haconfig.xml 
+        #  - a=$(echo <OAM IF0 NETWORK ADDRESS/CIDR> | cut -f 2 -d/) ; sed -i s/__INTERNAL_NETMASK__/$a/g /etc/italtel/haconfig.xml 
+        #  - sed -i 's/__PEER_A_HOSTNAME__/oam/g' /etc/italtel/haconfig.xml 
+        #  - sed -i 's/__PEER_B_HOSTNAME__/oam_B/g' /etc/italtel/haconfig.xml 
+        #  - sed -i 's/__INTERNAL_VIP__/<OAM IF0 IP ADDRESS>/g' /etc/named.conf 
+        #  - sed -i 's/__INTERNAL_PHY__/<OAM IF0 IP ADDRESS>/g' /etc/named.conf 
+        #  - sed -i 's/__INTERNAL_VIP__/<OAM IF0 IP ADDRESS>/g' /var/named/data/db.default.italtel.com
+        #  - sed -i 's/__OAM_NET_VIP__/<OAM IF1 IP ADDRESS>/g' /etc/italtel/haconfig.xml 
+        #  - sed -i 's/__OAM_NET_IF__/eth1/g' /etc/italtel/haconfig.xml 
+        #  - a=$(echo <OAM IF1 NETWORK ADDRESS/CIDR> | cut -f 2 -d/) ; sed -i s/__OAM_NET_NETMASK__/$a/g /etc/italtel/haconfig.xml 
+        #  - echo >> /etc/ssh/sshd_config 
+        #  - echo >> /etc/ssh/sshd_config 
+        #  - echo 'AllowUsers italtel oam@<DB IF0 IP ADDRESS> postgres@<DB IF0 IP ADDRESS>' >> /etc/ssh/sshd_config 
+        #  - systemctl reload sshd
+        #  - /usr/local/bin/ext_net_up
 
     # IBCF
   - id: "vdu02"
@@ -53,6 +108,46 @@ virtual_deployment_units:
       - id: "if0"
         interface: "ipv4"
         type: "internal"
+    user_data: |
+      ibcf_blob: |
+        ##cloud-config 
+        #set_hostname: ibcf 
+        #fqdn: ibcf.default.italtel.com 
+        #ssh_pwauth: false 
+        #system_info: 
+        #  default_user: 
+        #    name: italtel 
+        #    lock_passwd: false 
+        #write_files: 
+        #  - content: | 
+        #      CONFIG_ADDRESS=<IBCF IF0 IP ADDRESS> 
+        #      SIP_ADDRESS=<IBCF IF0 IP ADDRESS> 
+        #      FAULT_ADDRESS=<IBCF IF0 IP ADDRESS> 
+        #      TRACE_ADDRESS=<IBCF IF0 IP ADDRESS> 
+        #      MEASURE_ADDRESS=<IBCF IF0 IP ADDRESS> 
+        #      CHARGING_ADDRESS=<IBCF IF0 IP ADDRESS> 
+        #    path: /etc/italtel/vnfc.conf 
+        #    permissions: '0644' 
+        #runcmd: 
+        #  - mkdir -p /etc/italtel/fileBackup 
+        #  - cp -p /etc/hosts /etc/italtel/fileBackup 
+        #  - cp -p /etc/resolv.conf /etc/italtel/fileBackup 
+        #  - cp -p /etc/redis-sentinel.conf /etc/italtel/fileBackup 
+        #  - cp -p /etc/sysconfig/network /etc/italtel/fileBackup 
+        #  - echo <IBCF IF0 IP ADDRESS> ibcf-config >> /etc/hosts 
+        #  - echo <IBCF IF0 IP ADDRESS> ibcf-sip >> /etc/hosts 
+        #  - echo <IBCF IF0 IP ADDRESS> ibcf-fault >> /etc/hosts 
+        #  - echo <IBCF IF0 IP ADDRESS> ibcf-trace >> /etc/hosts 
+        #  - echo <IBCF IF0 IP ADDRESS> ibcf-measure >> /etc/hosts 
+        #  - echo <IBCF IF0 IP ADDRESS> ibcf-charging >> /etc/hosts 
+        #  - echo search default.italtel.com > /etc/resolv.conf 
+        #  - echo 'option timeout:1' >> /etc/resolv.conf
+        #  - echo 'PRODUCT_INFO=IBCF-LARGE-IRPS' >> /etc/italtel/vnfc.conf 
+        #  - sysctl -w net.ipv4.conf.all.accept_redirects=0 
+        #  - sysctl -w net.ipv4.conf.all.send_redirects=0 
+        #  - sysctl -w net.ipv4.conf.default.accept_redirects=0 
+        #  - sysctl -w net.ipv4.conf.default.send_redirects=0
+        #  - echo ibcf > /var/lib/cloud/data/previous-hostname
 
     # FELB
   - id: "vdu03"
@@ -75,6 +170,32 @@ virtual_deployment_units:
       - id: "if1"
         interface: "ipv4"
         type: "external"
+    user_data: |
+      felb_blob: |
+        ##cloud-config 
+        #set_hostname: felb 
+        #fqdn: felb.default.italtel.com 
+        #ssh_pwauth: false 
+        #system_info: 
+        #  default_user: 
+        #      name: italtel 
+        #          lock_passwd: false 
+        #write_files: 
+        #  - content: | 
+        #      VIRTUAL_ADDRESS=<FELB IF0 IP ADDRESS> 
+        #      CONFIG_ADDRESS=<FELB IF0 IP ADDRESS> 
+        #      SIP_ADDRESS=<FELB IF0 IP ADDRESS> 
+        #    path: /etc/italtel/vnfc.conf 
+        #    permissions: '0644' 
+        #runcmd: 
+        #  - echo CONFIG_ADDRESS_NETMASK_LENGTH=$(echo <FELB IF0 NETWORK ADDRESS/CIDR> | cut -f 2 -d/) >> /etc/italtel/vnfc.conf 
+        #  - mkdir -p /etc/italtel/fileBackup 
+        #  - cp -p /etc/hosts /etc/italtel/fileBackup 
+        #  - cp -p /etc/resolv.conf /etc/italtel/fileBackup 
+        #  - echo <FELB IF0 IP ADDRESS> felb-config >> /etc/hosts 
+        #  - echo search default.italtel.com > /etc/resolv.conf 
+        #  - echo 'option timeout:1' >> /etc/resolv.conf
+        #  - echo felb > /var/lib/cloud/data/previous-hostname
 
     # DB
   - id: "vdu04"
@@ -94,6 +215,32 @@ virtual_deployment_units:
       - id: "if0"
         interface: "ipv4"
         type: "internal"
+    user_data: |
+      db_blob: |
+        ##cloud-config 
+        #set_hostname: db 
+        #fqdn: db.default.italtel.com 
+        #ssh_pwauth: false 
+        #system_info: 
+        #  default_user: 
+        #      name: italtel 
+        #      lock_passwd: false 
+        #write_files: 
+        #  - content: | 
+        #      CONFIG_ADDRESS=<DB IF0 IP ADDRESS> 
+        #      AUDIT_ENABLE=YES 
+        #    path: /etc/italtel/vnfc.conf 
+        #    permissions: '0644' 
+        #runcmd: 
+        #  - mkdir -p /etc/italtel/fileBackup 
+        #  - cp -p /etc/hosts /etc/italtel/fileBackup 
+        #  - cp -p /etc/resolv.conf /etc/italtel/fileBackup 
+        #  - cp -p /etc/redis.conf /etc/italtel/fileBackup 
+        #  - cp -p /etc/redis-sentinel.conf /etc/italtel/fileBackup 
+        #  - echo <DB IF0 IP ADDRESS> db-config >> /etc/hosts 
+        #  - echo search default.italtel.com > /etc/resolv.conf 
+        #  - echo 'option timeout:1' >> /etc/resolv.conf
+        #  - echo db > /var/lib/cloud/data/previous-hostname
 
 ##
 ## The virtual links that interconnect
