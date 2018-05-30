@@ -1,0 +1,82 @@
+name: Heimdall Web
+vendor: it-aveiro
+version: '1.0'
+author: Eduardo Sousa :@ it-aveiro
+descriptor_version: '1.0'
+connection_points:
+- id: mgmt
+  interface: ipv4
+  type: management
+- id: external
+  interface: ipv4
+  type: external
+network_functions:
+- vnf_id: cloud_gateway
+  vnf_name: cloud_gateway
+  vnf_vendor: it-aveiro
+  vnf_version: '1.0'
+- vnf_id: cloud_classifier
+  vnf_name: cloud_classifier
+  vnf_vendor: it-aveiro
+  vnf_version: '1.0'
+- vnf_id: cloud_mitm
+  vnf_name: cloud_mitm
+  vnf_vendor: it-aveiro
+  vnf_version: '1.0'
+- vnf_id: cloud_dns
+  vnf_name: cloud_dns
+  vnf_vendor: it-aveiro
+  vnf_version: '1.0'
+- vnf_id: cloud_e2guardian
+  vnf_name: cloud_e2guardian
+  vnf_vendor: it-aveiro
+  vnf_version: '1.0'
+- vnf_id: cloud_havp
+  vnf_name: cloud_havp
+  vnf_vendor: it-aveiro
+  vnf_version: '1.0'
+- vnf_id: cloud_squid
+  vnf_name: cloud_squid
+  vnf_vendor: it-aveiro
+  vnf_version: '1.0'
+- vnf_id: cloud_ziproxy
+  vnf_name: cloud_ziproxy
+  vnf_vendor: it-aveiro
+  vnf_version: '1.0'
+virtual_links:
+- connection_points_reference:
+  - cloud_gateway:mgmt_cp
+  - cloud_classifier:mgmt_cp
+  - cloud_mitm:mgmt_cp
+  - cloud_dns:mgmt_cp
+  - cloud_e2guardian:mgmt_cp
+  - cloud_havp:mgmt_cp
+  - cloud_squid:mgmt_cp
+  - cloud_ziproxy:mgmt_cp
+  - mgmt
+  connectivity_type: E-LAN
+  id: mgmt
+- connection_points_reference:
+  - cloud_gateway:external_cp
+  - external
+  connectivity_type: E-LAN
+  id: external_vld
+- connection_points_reference:
+  - cloud_gateway:class_data_cp
+  - cloud_classifier:class_data_cp
+  connectivity_type: E-LAN
+  id: class_data_vld
+- connection_points_reference:
+  - cloud_classifier:intrusive_cp
+  - cloud_mitm:intrusive_cp
+  connectivity_type: E-LAN
+  id: intrusive_vld
+- connection_points_reference:
+  - cloud_mitm:mitm_data_cp
+  - cloud_dns:mitm_data_cp
+  - cloud_e2guardian:mitm_data_cp
+  - cloud_havp:mitm_data_cp
+  - cloud_squid:mitm_data_cp
+  - cloud_ziproxy:mitm_data_cp
+  connectivity_type: E-LAN
+  id: mitm_data_vld

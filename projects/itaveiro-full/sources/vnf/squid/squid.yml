@@ -1,0 +1,50 @@
+name: cloud_squid
+description: Heimdall Cloud Squid
+descriptor_version: vnfd-schema-01
+vendor: it-aveiro
+version: '1.0'
+author: Eduardo Sousa :@ IT-Aveiro
+connection_points:
+- id: mgmt_cp
+  interface: ipv4
+  type: management
+- id: mitm_data_cp
+  interface: ipv4
+  type: external
+virtual_deployment_units:
+- id: cloud_squid_vdu
+  user_data: |
+    #cloud-config
+    password: sec
+    chpasswd: { expire: False }
+    ssh_pwauth: True"
+  resource_requirements:
+    cpu:
+      vcpus: 1
+    memory:
+      size: 2
+      size_unit: GB
+    storage:
+      size: 4
+      size_unit: GB
+  vm_image: squid
+  vm_image_format: qcow2
+  vm_image_md5: '607b08f0d79d635d00b3c49ca6d30094'
+  connection_points:
+  - id: eth0
+    interface: ipv4
+    type: management
+  - id: output
+    interface: ipv4
+    type: internal 
+virtual_links:
+- connection_points_reference:
+  - cloud_squid_vdu:eth0
+  - mgmt_cp
+  connectivity_type: E-LAN
+  id: mgmt
+- connection_points_reference:
+  - cloud_squid_vdu:output
+  - mitm_data_cp
+  connectivity_type: E-Line
+  id: mitm_data
