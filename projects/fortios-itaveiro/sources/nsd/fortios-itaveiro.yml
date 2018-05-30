@@ -1,5 +1,5 @@
-name: FortiOS-Heimdall 
-vendor: IT-Aveiro & Fortigate
+name: fortios-heimdall 
+vendor: it-aveiro-fortigate
 version: '1.0'
 author: Eduardo Sousa :@ IT-Aveiro
 descriptor_version: "1.0"
@@ -19,11 +19,11 @@ network_functions:
   vnf_version: "0.1"  
 - vnf_id: cloud_gateway
   vnf_name: cloud_gateway
-  vnf_vendor: IT-Aveiro
+  vnf_vendor: it-aveiro
   vnf_version: '1.0'
 - vnf_id: cloud_classifier
   vnf_name: cloud_classifier
-  vnf_vendor: IT-Aveiro
+  vnf_vendor: it-aveiro
   vnf_version: '1.0'
 
 virtual_links:
