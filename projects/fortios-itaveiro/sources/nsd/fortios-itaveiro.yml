@@ -1,0 +1,51 @@
+name: FortiOS - Heimdall 
+vendor: IT-Aveiro & Fortigate
+version: '1.0'
+author: Eduardo Sousa :@ IT-Aveiro
+descriptor_version: "1.0"
+
+connection_points:
+- id: mgmt
+  interface: ipv4
+  type: management
+- id: external
+  interface: ipv4
+  type: external
+
+network_functions:
+- vnf_id: "fortios"
+  vnf_vendor: "fortios"
+  vnf_name: "fort-vnf"
+  vnf_version: "0.1"  
+- vnf_id: cloud_gateway
+  vnf_name: cloud_gateway
+  vnf_vendor: IT-Aveiro
+  vnf_version: '1.0'
+- vnf_id: cloud_classifier
+  vnf_name: cloud_classifier
+  vnf_vendor: IT-Aveiro
+  vnf_version: '1.0'
+
+virtual_links:
+- connection_points_reference:
+  - cloud_gateway:mgmt_cp
+  - cloud_classifier:mgmt_cp
+  - fortios:cpmgmt
+  - mgmt
+  connectivity_type: E-LAN
+  id: mgmt
+- connection_points_reference:
+  - fortios:west
+  - external
+  connectivity_type: E-Line
+  id: external_vld
+- connection_points_reference:
+  - cloud_gateway:class_data_cp
+  - cloud_clasifier:class_data_cp
+  connectivity_type: E-Line
+  id: class_data_vld
+- connection_points_reference:
+  - cloud_gateway:external_cp
+  - fortios:east
+  connectivity_type: E-Line
+  id: class_data_vld
