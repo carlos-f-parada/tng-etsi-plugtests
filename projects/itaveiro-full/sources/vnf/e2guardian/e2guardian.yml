@@ -29,7 +29,7 @@ virtual_deployment_units:
       size_unit: GB
   vm_image: e2guardian
   vm_image_format: qcow2
-  md5: "83434"
+  vm_image_md5: "04ece77c89840bf501b407ba5f743f66"
   connection_points:
   - id: eth0
     interface: ipv4

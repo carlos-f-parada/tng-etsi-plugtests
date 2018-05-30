@@ -29,7 +29,7 @@ virtual_deployment_units:
       size_unit: GB
   vm_image: ziproxy
   vm_image_format: qcow2
-  md5: "3423"
+  vm_image_md5: "c871e54ecba30c3590233e33c178e0ba"
   connection_points:
   - id: eth0
     interface: ipv4

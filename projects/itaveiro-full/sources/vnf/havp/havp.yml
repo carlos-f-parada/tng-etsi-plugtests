@@ -29,13 +29,13 @@ virtual_deployment_units:
       size_unit: GB
   vm_image: havp
   vm_image_format: qcow2
-  vm_image_md5: '607b08f0d79d635d00b3c49ca6d30094' 
+  vm_image_md5: '12bf32a471b43ed2088d5e6c86a75756' 
   connection_points:
   - id: eth0
     interface: ipv4
     type: management
   - id: output
-    interface: output 
+    interface: ipv4 
     type: internal 
 virtual_links:
 - connection_points_reference:

@@ -32,7 +32,7 @@ virtual_deployment_units:
       size_unit: GB
   vm_image: mitm
   vm_image_format: qcow2
-  vm_image_md5: '607b08f0d79d635d00b3c49ca6d30094'
+  vm_image_md5: 'a8e499904501186cd0ba0b63227fdc4b'
   connection_points:
   - id: eth0
     interface: ipv4

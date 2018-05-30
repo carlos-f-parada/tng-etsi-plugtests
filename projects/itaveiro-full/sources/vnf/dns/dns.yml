@@ -29,7 +29,7 @@ virtual_deployment_units:
       size_unit: GB
   vm_image: dns
   vm_image_format: qcow2
-  md5: '8594343' 
+  vm_image_md5: '3c635b80c061b6608397710ab271e6b5' 
   connection_points:
   - id: eth0
     interface: ipv4
