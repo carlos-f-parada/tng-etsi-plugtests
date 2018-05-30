@@ -1,0 +1,8 @@
+descriptor_extension: yml
+package:
+  description: ETSI Plugtest IT Aveiro
+  maintainer: Thomas Soenen - Ugent / imec
+  name: "itaveiro"
+  vendor: "itaveiro"
+  version: "0.1"
+version: "0.5"
