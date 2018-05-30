@@ -35,7 +35,7 @@ virtual_deployment_units:
     interface: ipv4
     type: management
   - id: output
-    interface:output 
+    interface: output 
     type: internal 
 virtual_links:
 - connection_points_reference:
