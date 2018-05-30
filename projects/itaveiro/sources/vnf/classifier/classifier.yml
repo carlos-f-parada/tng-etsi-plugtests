@@ -1,7 +1,7 @@
 name: cloud_classifier
 description: Heimdall Cloud Classifier
 descriptor_version: vnfd-schema-01
-vendor: IT-Aveiro
+vendor: it-aveiro
 version: '1.0'
 author: Eduardo Sousa :@ IT-Aveiro
 connection_points:

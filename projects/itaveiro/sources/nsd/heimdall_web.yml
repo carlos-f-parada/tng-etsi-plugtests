@@ -1,5 +1,5 @@
-name: Heimdall Web
-vendor: IT-Aveiro
+name: HeimdallWeb
+vendor: it-aveiro
 version: '1.0'
 author: Eduardo Sousa :@ IT-Aveiro
 descriptor_version: "1.0"
@@ -13,11 +13,11 @@ connection_points:
 network_functions:
 - vnf_id: cloud_gateway
   vnf_name: cloud_gateway
-  vnf_vendor: IT-Aveiro
+  vnf_vendor: it-aveiro
   vnf_version: '1.0'
 - vnf_id: cloud_classifier
   vnf_name: cloud_classifier
-  vnf_vendor: IT-Aveiro
+  vnf_vendor: it-aveiro
   vnf_version: '1.0'
 virtual_links:
 - connection_points_reference:
