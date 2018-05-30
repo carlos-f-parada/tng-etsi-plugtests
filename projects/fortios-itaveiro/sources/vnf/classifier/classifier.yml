@@ -1,9 +1,9 @@
 name: cloud_classifier
-description: Heimdall Cloud Classifier
+description: heimdall cloud classifier
 descriptor_version: vnfd-schema-01
 vendor: it-aveiro
 version: '1.0'
-author: Eduardo Sousa :@ IT-Aveiro
+author: Eduardo Sousa :@ it-aveiro
 connection_points:
 - id: mgmt_cp
   interface: ipv4
