@@ -63,8 +63,8 @@ virtual_links:
  - connection_points_reference:
   - cloud_classifier_vdu:input
   - intrusive_cp
-#   connectivity_type: E-Line
-#   id: non_intrusive
+  connectivity_type: E-Line
+  id: intrusive
 # - connection_points_reference:
 #   - cloud_classifier_vdu:eth3
 #   - intrusive_cp
