@@ -6,7 +6,7 @@ descriptor_version: "vnfd-schema-01"
 vendor: "citrix"
 name: "citrix"
 version: "0.1"
-author: "Felipe Vicens :@ ATOS"
+author: "Felipe Vicen :@ ATOS"
 description: "citrix"
 ##
 ## The virtual deployment unit.
