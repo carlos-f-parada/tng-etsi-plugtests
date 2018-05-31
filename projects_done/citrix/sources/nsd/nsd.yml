@@ -1,0 +1,51 @@
+descriptor_version: "1.0"
+vendor: "citrix"
+name: "citrix"
+version: "0.1"
+author: "Felipe Vicens"
+description: "Citrix"
+##
+## The various network functions this service
+## is composed of.
+##
+network_functions:
+  - vnf_id: "citrix"
+    vnf_vendor: "citrix"
+    vnf_name: "citrix"
+    vnf_version: "0.1"
+
+##
+## The NS connection points to the
+## outside world.
+##
+connection_points:
+  - id: "mgmt"
+    interface: "ipv4"
+    type: "management"
+  - id: "east"
+    interface: "ipv4"
+    type: "external"
+  - id: "west"
+    interface: "ipv4"
+    type: "external"
+
+##
+## The virtual links that interconnect
+## the different connections points.
+##
+virtual_links:
+  - id: "vlmgmt"
+    connectivity_type: "E-LAN"
+    connection_points_reference:
+      - "citrix:cpmgmt"
+      - "mgmt"
+  - id: "east"
+    connectivity_type: "E-Line"
+    connection_points_reference:
+      - "east"
+      - "citrix:cpeast"
+  - id: "west"
+    connectivity_type: "E-Line"
+    connection_points_reference:
+      - "west"
+      - "citrix:cpwest"

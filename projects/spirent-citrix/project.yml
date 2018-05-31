@@ -1,8 +1,8 @@
 descriptor_extension: yml
 package:
-  description: ETSI Plugtest CITRIX
+  description: ETSI Plugtest CITRIX-SPIRENT
   maintainer: Felipe Vicens, ATOS, felipe.vicens@atos.net
-  name: "citrix"
-  vendor: "citrix"
+  name: "spirent-citrix"
+  vendor: "spirent-citrix"
   version: "0.5"
 version: '0.5'
