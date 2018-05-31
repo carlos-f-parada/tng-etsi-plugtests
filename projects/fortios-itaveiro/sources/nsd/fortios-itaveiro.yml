@@ -48,4 +48,4 @@ virtual_links:
   - cloud_gateway:external_cp
   - fortios:east
   connectivity_type: E-Line
-  id: class_data_vld
+  id: class_data_vld1
