@@ -13,7 +13,7 @@ network_functions:
     vnf_vendor: "citrix"
     vnf_name: "citrix"
     vnf_version: "0.1"
-  - vnf_id: "citrix"
+  - vnf_id: "spirent"
     vnf_vendor: "spirent"
     vnf_name: "stcv-vnf"
     vnf_version: "0.1"
