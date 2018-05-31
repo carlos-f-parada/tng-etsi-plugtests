@@ -15,7 +15,7 @@ virtual_deployment_units:
   - id: "vpx"
     vm_image: "http://www.google.com"
     vm_image_format: "qcow2"
-    vm_image_md5: '3aa22501eb698ea27ae27c957a9eebb1'
+    vm_image_md5: '3fedb018d63e822b51cabd8f8cc6f416'
     resource_requirements:
       cpu:
         vcpus: 2
