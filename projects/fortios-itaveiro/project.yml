@@ -1,8 +1,8 @@
 descriptor_extension: yml
 package:
-  description: ETSI Plugtest IT Aveiro
+  description: ETSI Plugtest Fortios + IT Aveiro
   maintainer: Thomas Soenen - Ugent / imec
-  name: "itaveiro"
-  vendor: "itaveiro"
+  name: "fortios-itaveiro"
+  vendor: "fortios-itaveiro"
   version: "0.1"
 version: "0.5"
