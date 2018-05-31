@@ -38,7 +38,7 @@ virtual_deployment_units:
   - id: "mas"
     vm_image: "http://www.google.com"
     vm_image_format: "qcow2"
-    vm_image_md5: '85e38df796e873017d8603fbe6451a02'
+    vm_image_md5: '6010b12bfd16638e8236c521e3390f38'
     resource_requirements:
       cpu:
         vcpus: 2
