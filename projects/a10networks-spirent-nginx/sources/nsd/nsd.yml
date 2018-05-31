@@ -2,7 +2,7 @@
 descriptor_version: "1.0"
 
 vendor: "eu.sonata-nfv"
-name: "generic-service"
+name: "a10-spirent-nginx"
 version: "0.1"
 author: "Thomas Soenen"
 description: >
