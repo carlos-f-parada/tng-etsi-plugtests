@@ -1,9 +1,9 @@
 descriptor_version: "1.0"
-vendor: "citrix"
-name: "citrix"
+vendor: "spirent-citrix"
+name: "spirent-citrix"
 version: "0.1"
 author: "Felipe Vicens"
-description: "Citrix"
+description: "spirent-citrix"
 ##
 ## The various network functions this service
 ## is composed of.
