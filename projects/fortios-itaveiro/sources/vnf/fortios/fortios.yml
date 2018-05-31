@@ -31,7 +31,7 @@ virtual_deployment_units:
         type: "management"
       - id: "west"
         interface: "ipv4"
-        type: "internal"
+        type: "external"
       - id: "input"
         interface: "ipv4"
         type: "internal"
