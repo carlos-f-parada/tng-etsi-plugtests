@@ -29,7 +29,7 @@ virtual_deployment_units:
       - id: "eth0"
         interface: "ipv4"
         type: "management"
-      - id: "west"
+      - id: "east"
         interface: "ipv4"
         type: "external"
       - id: "input"
