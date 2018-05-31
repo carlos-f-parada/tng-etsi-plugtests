@@ -33,6 +33,6 @@ virtual_links:
   id: external_vld
 - connection_points_reference:
   - cloud_gateway:class_data_cp
-  - cloud_clasifier:class_data_cp
+  - cloud_classifier:class_data_cp
   connectivity_type: E-Line
   id: class_data_vld
