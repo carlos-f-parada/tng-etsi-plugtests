@@ -39,6 +39,12 @@ virtual_deployment_units:
     vm_image: "http://www.google.com"
     vm_image_format: "qcow2"
     vm_image_md5: '6010b12bfd16638e8236c521e3390f38'
+    user_data: |
+      #cloud-config
+      hostname: ubuntuvnf
+      password: ubuntu
+      chpasswd: { expire: False }
+      ssh_pwauth: True
     resource_requirements:
       cpu:
         vcpus: 2
