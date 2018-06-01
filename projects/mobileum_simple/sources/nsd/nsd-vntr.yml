@@ -8,7 +8,7 @@ vendor: "mobileum.service-descriptor"
 name: "vntr"
 version: "0.5"
 author: "Alberto Rocha, Altice Labs, alberto-m-rocha@alticelabs.com"
-description: "Mobileum vNTR NS (www.mobileum.com)"
+description: "Mobileum Simplified vNTR NS (www.mobileum.com)"
 
 ##
 ## The various network functions this service
