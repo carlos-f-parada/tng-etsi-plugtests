@@ -1,17 +1,21 @@
 descriptor_version: "1.0"
-vendor: "citrix"
-name: "citrix"
+vendor: "spirent-fortios"
+name: "spirent-fortios"
 version: "0.1"
-author: "Felipe Vicens"
-description: "Citrix"
+author: "Thomas Soenen"
+description: "spirent-fortios"
 ##
 ## The various network functions this service
 ## is composed of.
 ##
 network_functions:
-  - vnf_id: "citrix"
-    vnf_vendor: "citrix"
-    vnf_name: "citrix"
+  - vnf_id: "fortios"
+    vnf_vendor: "fortios"
+    vnf_name: "fort-vnf"
+    vnf_version: "0.1"
+  - vnf_id: "spirent"
+    vnf_vendor: "spirent"
+    vnf_name: "stcv-vnf"
     vnf_version: "0.1"
 
 ##
@@ -22,10 +26,7 @@ connection_points:
   - id: "mgmt"
     interface: "ipv4"
     type: "management"
-  - id: "east"
-    interface: "ipv4"
-    type: "external"
-  - id: "west"
+  - id: "out"
     interface: "ipv4"
     type: "external"
 
@@ -37,15 +38,16 @@ virtual_links:
   - id: "vlmgmt"
     connectivity_type: "E-LAN"
     connection_points_reference:
-      - "citrix:cpmgmt"
+      - "fortios:cpmgmt"
+      - "spirent:cpmgmt"
       - "mgmt"
-  - id: "east"
+  - id: "middle"
     connectivity_type: "E-Line"
     connection_points_reference:
-      - "east"
-      - "citrix:cpeast"
-  - id: "west"
+      - "spirent:cpoutput"
+      - "fortios:east"
+  - id: "out"
     connectivity_type: "E-Line"
     connection_points_reference:
-      - "west"
-      - "citrix:cpwest"
+      - "out"
+      - "fortios:west"

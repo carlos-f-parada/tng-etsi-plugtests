@@ -1,0 +1,8 @@
+descriptor_extension: yml
+package:
+  description: ETSI Plugtest FORTIOS-SPIRENT
+  maintainer: Thomas Soenen
+  name: "spirent-fortios"
+  vendor: "spirent-fortios"
+  version: "0.5"
+version: '0.5'
