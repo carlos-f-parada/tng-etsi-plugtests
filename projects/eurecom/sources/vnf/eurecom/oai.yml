@@ -14,10 +14,10 @@ description: "NG40 vTester"
 ##
 virtual_deployment_units:
   - id: "vdu01"
-#    vm_image: "http://172.22.1.1/NFVPLU3/VNFs/ng4T/ng40vTester_v1.0.qcow2"
+#    vm_image: "http://172.22.1.1/NFVPLU3/VNFs/OpenairInterface/eurecom-mmespgw.compressed.qcow2"
     vm_image: "http://www.google.com"
     vm_image_format: "qcow2"
-    vm_image_md5: 'd3d8108cc6840a4cd89c13e4465f12aa'
+    vm_image_md5: 'c1fb50efd216a1674289dfb2b9114af4'
     resource_requirements:
       cpu:
         vcpus: 2
@@ -41,12 +41,6 @@ virtual_deployment_units:
         interface: "ipv4"
         type: "internal"
       - id: "ens7"
-        interface: "ipv4"
-        type: "internal"
-      - id: "ens8"
-        interface: "ipv4"
-        type: "internal"
-      - id: "ens9"
         interface: "ipv4"
         type: "internal"
 
@@ -75,20 +69,10 @@ virtual_links:
     connection_points_reference:
       - "vdu01:ens6"
       - "cps1u"
-  - id: "s5"
-    connectivity_type: "E-Line"
-    connection_points_reference:
-      - "vdu01:ens7"
-      - "cps5"
-  - id: "dia"
-    connectivity_type: "E-Line"
-    connection_points_reference:
-      - "vdu01:ens8"
-      - "cpdia"
   - id: "sgi"
     connectivity_type: "E-Line"
     connection_points_reference:
-      - "vdu01:ens9"
+      - "vdu01:ens7"
       - "cpsgi"
 
 ##
@@ -106,12 +90,6 @@ connection_points:
     interface: "ipv4"
     type: "internal"
   - id: "cps1u"
-    interface: "ipv4"
-    type: "internal"
-  - id: "cps5"
-    interface: "ipv4"
-    type: "internal"
-  - id: "cpdia"
     interface: "ipv4"
     type: "internal"
   - id: "cpsgi"
