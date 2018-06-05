@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="type" attr.type="string" for="edge" id="d8" />
+  <key attr.name="level" attr.type="long" for="edge" id="d7" />
+  <key attr.name="label" attr.type="string" for="edge" id="d6" />
+  <key attr.name="node_id" attr.type="string" for="node" id="d5" />
+  <key attr.name="node_label" attr.type="string" for="node" id="d4" />
+  <key attr.name="type" attr.type="string" for="node" id="d3" />
+  <key attr.name="label" attr.type="string" for="node" id="d2" />
+  <key attr.name="level" attr.type="long" for="node" id="d1" />
+  <key attr.name="parent_id" attr.type="string" for="node" id="d0" />
+  <graph edgedefault="undirected">
+    <node id="vnf_ng40_2:br-mgmt">
+      <data key="d0">ng4t.ng40-vtester2.0.5</data>
+      <data key="d1">2</data>
+      <data key="d2">br-mgmt</data>
+      <data key="d3">bridge</data>
+    </node>
+    <node id="vnf_ng40_2:cpsgi">
+      <data key="d0">ng4t-ng4t.service-descriptor.ng4t-ng4t-ns.0.5</data>
+      <data key="d3">iface</data>
+      <data key="d4">ng40-vtester2</data>
+      <data key="d1">1</data>
+      <data key="d2">cpsgi</data>
+      <data key="d5">ng4t.ng40-vtester2.0.5</data>
+    </node>
+    <node id="vnf_ng40_2:cps5">
+      <data key="d0">ng4t-ng4t.service-descriptor.ng4t-ng4t-ns.0.5</data>
+      <data key="d3">iface</data>
+      <data key="d4">ng40-vtester2</data>
+      <data key="d1">1</data>
+      <data key="d2">cps5</data>
+      <data key="d5">ng4t.ng40-vtester2.0.5</data>
+    </node>
+    <node id="vnf_ng40_1:vdu01">
+      <data key="d0">ng4t.ng40-vtester1.0.5</data>
+      <data key="d3">iface</data>
+      <data key="d4">vdu01</data>
+      <data key="d1">2</data>
+      <data key="d2">ens5</data>
+      <data key="d5">vdu01</data>
+    </node>
+    <node id="br-vls1mmes1us6">
+      <data key="d0">ng4t-ng4t.service-descriptor.ng4t-ng4t-ns.0.5</data>
+      <data key="d1">1</data>
+      <data key="d2">br-vls1mmes1us6</data>
+      <data key="d3">bridge</data>
+    </node>
+    <node id="nscpmgmt">
+      <data key="d0" />
+      <data key="d3">br-iface</data>
+      <data key="d4">ng4t-ng4t-ns</data>
+      <data key="d1">0</data>
+      <data key="d2">nscpmgmt</data>
+      <data key="d5">ng4t-ng4t.service-descriptor.ng4t-ng4t-ns.0.5</data>
+    </node>
+    <node id="vnf_ng40_2:cps1u">
+      <data key="d0">ng4t-ng4t.service-descriptor.ng4t-ng4t-ns.0.5</data>
+      <data key="d3">iface</data>
+      <data key="d4">ng40-vtester2</data>
+      <data key="d1">1</data>
+      <data key="d2">cps1u</data>
+      <data key="d5">ng4t.ng40-vtester2.0.5</data>
+    </node>
+    <node id="br-vlmgmt">
+      <data key="d0">ng4t-ng4t.service-descriptor.ng4t-ng4t-ns.0.5</data>
+      <data key="d1">1</data>
+      <data key="d2">br-vlmgmt</data>
+      <data key="d3">bridge</data>
+    </node>
+    <node id="vnf_ng40_2:cps6">
+      <data key="d0">ng4t-ng4t.service-descriptor.ng4t-ng4t-ns.0.5</data>
+      <data key="d3">iface</data>
+      <data key="d4">ng40-vtester2</data>
+      <data key="d1">1</data>
+      <data key="d2">cps6</data>
+      <data key="d5">ng4t.ng40-vtester2.0.5</data>
+    </node>
+    <node id="vnf_ng40_2:cps1mme">
+      <data key="d0">ng4t-ng4t.service-descriptor.ng4t-ng4t-ns.0.5</data>
+      <data key="d3">iface</data>
+      <data key="d4">ng40-vtester2</data>
+      <data key="d1">1</data>
+      <data key="d2">cps1mme</data>
+      <data key="d5">ng4t.ng40-vtester2.0.5</data>
+    </node>
+    <node id="vnf_ng40_1:cps5">
+      <data key="d0">ng4t-ng4t.service-descriptor.ng4t-ng4t-ns.0.5</data>
+      <data key="d3">iface</data>
+      <data key="d4">ng40-vtester1</data>
+      <data key="d1">1</data>
+      <data key="d2">cps5</data>
+      <data key="d5">ng4t.ng40-vtester1.0.5</data>
+    </node>
+    <node id="vnf_ng40_1:br-mgmt">
+      <data key="d0">ng4t.ng40-vtester1.0.5</data>
+      <data key="d1">2</data>
+      <data key="d2">br-mgmt</data>
+      <data key="d3">bridge</data>
+    </node>
+    <node id="vnf_ng40_2:cpmgmt">
+      <data key="d0">ng4t-ng4t.service-descriptor.ng4t-ng4t-ns.0.5</data>
+      <data key="d3">br-iface</data>
+      <data key="d4">ng40-vtester2</data>
+      <data key="d1">1</data>
+      <data key="d2">cpmgmt</data>
+      <data key="d5">ng4t.ng40-vtester2.0.5</data>
+    </node>
+    <node id="vnf_ng40_2:cpdia">
+      <data key="d0">ng4t-ng4t.service-descriptor.ng4t-ng4t-ns.0.5</data>
+      <data key="d3">iface</data>
+      <data key="d4">ng40-vtester2</data>
+      <data key="d1">1</data>
+      <data key="d2">cpdia</data>
+      <data key="d5">ng4t.ng40-vtester2.0.5</data>
+    </node>
+    <node id="vnf_ng40_1:cps1mme">
+      <data key="d0">ng4t-ng4t.service-descriptor.ng4t-ng4t-ns.0.5</data>
+      <data key="d3">iface</data>
+      <data key="d4">ng40-vtester1</data>
+      <data key="d1">1</data>
+      <data key="d2">cps1mme</data>
+      <data key="d5">ng4t.ng40-vtester1.0.5</data>
+    </node>
+    <node id="vnf_ng40_1:cpmgmt">
+      <data key="d0">ng4t-ng4t.service-descriptor.ng4t-ng4t-ns.0.5</data>
+      <data key="d3">br-iface</data>
+      <data key="d4">ng40-vtester1</data>
+      <data key="d1">1</data>
+      <data key="d2">cpmgmt</data>
+      <data key="d5">ng4t.ng40-vtester1.0.5</data>
+    </node>
+    <node id="vnf_ng40_1:cps1u">
+      <data key="d0">ng4t-ng4t.service-descriptor.ng4t-ng4t-ns.0.5</data>
+      <data key="d3">iface</data>
+      <data key="d4">ng40-vtester1</data>
+      <data key="d1">1</data>
+      <data key="d2">cps1u</data>
+      <data key="d5">ng4t.ng40-vtester1.0.5</data>
+    </node>
+    <node id="vnf_ng40_1:cpsgi">
+      <data key="d0">ng4t-ng4t.service-descriptor.ng4t-ng4t-ns.0.5</data>
+      <data key="d3">iface</data>
+      <data key="d4">ng40-vtester1</data>
+      <data key="d1">1</data>
+      <data key="d2">cpsgi</data>
+      <data key="d5">ng4t.ng40-vtester1.0.5</data>
+    </node>
+    <node id="vnf_ng40_2:cps11">
+      <data key="d0">ng4t-ng4t.service-descriptor.ng4t-ng4t-ns.0.5</data>
+      <data key="d3">iface</data>
+      <data key="d4">ng40-vtester2</data>
+      <data key="d1">1</data>
+      <data key="d2">cps11</data>
+      <data key="d5">ng4t.ng40-vtester2.0.5</data>
+    </node>
+    <node id="vnf_ng40_1:cps11">
+      <data key="d0">ng4t-ng4t.service-descriptor.ng4t-ng4t-ns.0.5</data>
+      <data key="d3">iface</data>
+      <data key="d4">ng40-vtester1</data>
+      <data key="d1">1</data>
+      <data key="d2">cps11</data>
+      <data key="d5">ng4t.ng40-vtester1.0.5</data>
+    </node>
+    <node id="vnf_ng40_1:cpdia">
+      <data key="d0">ng4t-ng4t.service-descriptor.ng4t-ng4t-ns.0.5</data>
+      <data key="d3">iface</data>
+      <data key="d4">ng40-vtester1</data>
+      <data key="d1">1</data>
+      <data key="d2">cpdia</data>
+      <data key="d5">ng4t.ng40-vtester1.0.5</data>
+    </node>
+    <node id="vnf_ng40_2:vdu01">
+      <data key="d0">ng4t.ng40-vtester2.0.5</data>
+      <data key="d3">iface</data>
+      <data key="d4">vdu01</data>
+      <data key="d1">2</data>
+      <data key="d2">ens5</data>
+      <data key="d5">vdu01</data>
+    </node>
+    <node id="vnf_ng40_1:cps6">
+      <data key="d0">ng4t-ng4t.service-descriptor.ng4t-ng4t-ns.0.5</data>
+      <data key="d3">iface</data>
+      <data key="d4">ng40-vtester1</data>
+      <data key="d1">1</data>
+      <data key="d2">cps6</data>
+      <data key="d5">ng4t.ng40-vtester1.0.5</data>
+    </node>
+    <edge source="vnf_ng40_2:br-mgmt" target="vnf_ng40_2:cpmgmt">
+      <data key="d6">mgmt</data>
+    </edge>
+    <edge source="vnf_ng40_2:br-mgmt" target="vnf_ng40_2:vdu01">
+      <data key="d6">mgmt</data>
+    </edge>
+    <edge source="vnf_ng40_2:cpsgi" target="vnf_ng40_1:cpsgi">
+      <data key="d7">1</data>
+      <data key="d6">vlsgi</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_ng40_2:cpsgi" target="vnf_ng40_2:vdu01">
+      <data key="d7">1</data>
+      <data key="d6">sgi</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_ng40_2:cps5" target="vnf_ng40_2:vdu01">
+      <data key="d7">1</data>
+      <data key="d6">s5</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_ng40_1:vdu01" target="vnf_ng40_1:cpsgi">
+      <data key="d7">1</data>
+      <data key="d6">sgi</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_ng40_1:vdu01" target="vnf_ng40_1:cps1u">
+      <data key="d7">1</data>
+      <data key="d6">s1u</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_ng40_1:vdu01" target="vnf_ng40_1:cps11">
+      <data key="d7">1</data>
+      <data key="d6">s11</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_ng40_1:vdu01" target="vnf_ng40_1:cps5">
+      <data key="d7">1</data>
+      <data key="d6">s5</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_ng40_1:vdu01" target="vnf_ng40_1:cpdia">
+      <data key="d7">1</data>
+      <data key="d6">dia</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_ng40_1:vdu01" target="vnf_ng40_1:cps1mme">
+      <data key="d7">1</data>
+      <data key="d6">s1mme</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_ng40_1:vdu01" target="vnf_ng40_1:br-mgmt">
+      <data key="d6">mgmt</data>
+    </edge>
+    <edge source="vnf_ng40_1:vdu01" target="vnf_ng40_1:cps6">
+      <data key="d7">1</data>
+      <data key="d6">s6</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="br-vls1mmes1us6" target="vnf_ng40_2:cps1u">
+      <data key="d7">1</data>
+      <data key="d6">vls1mmes1us6</data>
+      <data key="d8">br-iface</data>
+    </edge>
+    <edge source="br-vls1mmes1us6" target="vnf_ng40_1:cps1u">
+      <data key="d7">1</data>
+      <data key="d6">vls1mmes1us6</data>
+      <data key="d8">br-iface</data>
+    </edge>
+    <edge source="br-vls1mmes1us6" target="vnf_ng40_2:cps6">
+      <data key="d7">1</data>
+      <data key="d6">vls1mmes1us6</data>
+      <data key="d8">br-iface</data>
+    </edge>
+    <edge source="br-vls1mmes1us6" target="vnf_ng40_2:cps1mme">
+      <data key="d7">1</data>
+      <data key="d6">vls1mmes1us6</data>
+      <data key="d8">br-iface</data>
+    </edge>
+    <edge source="br-vls1mmes1us6" target="vnf_ng40_1:cps1mme">
+      <data key="d7">1</data>
+      <data key="d6">vls1mmes1us6</data>
+      <data key="d8">br-iface</data>
+    </edge>
+    <edge source="br-vls1mmes1us6" target="vnf_ng40_1:cps6">
+      <data key="d7">1</data>
+      <data key="d6">vls1mmes1us6</data>
+      <data key="d8">br-iface</data>
+    </edge>
+    <edge source="nscpmgmt" target="br-vlmgmt">
+      <data key="d7">1</data>
+      <data key="d6">vlmgmt</data>
+      <data key="d8">br-iface</data>
+    </edge>
+    <edge source="vnf_ng40_2:cps1u" target="vnf_ng40_2:vdu01">
+      <data key="d7">1</data>
+      <data key="d6">s1u</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="br-vlmgmt" target="vnf_ng40_2:cpmgmt">
+      <data key="d7">1</data>
+      <data key="d6">vlmgmt</data>
+      <data key="d8">br-iface</data>
+    </edge>
+    <edge source="br-vlmgmt" target="vnf_ng40_1:cpmgmt">
+      <data key="d7">1</data>
+      <data key="d6">vlmgmt</data>
+      <data key="d8">br-iface</data>
+    </edge>
+    <edge source="vnf_ng40_2:cps6" target="vnf_ng40_2:vdu01">
+      <data key="d7">1</data>
+      <data key="d6">s6</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_ng40_2:cps1mme" target="vnf_ng40_2:vdu01">
+      <data key="d7">1</data>
+      <data key="d6">s1mme</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_ng40_1:br-mgmt" target="vnf_ng40_1:cpmgmt">
+      <data key="d6">mgmt</data>
+    </edge>
+    <edge source="vnf_ng40_2:cpdia" target="vnf_ng40_2:vdu01">
+      <data key="d7">1</data>
+      <data key="d6">dia</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_ng40_2:cps11" target="vnf_ng40_2:vdu01">
+      <data key="d7">1</data>
+      <data key="d6">s11</data>
+      <data key="d8">iface</data>
+    </edge>
+  </graph>
+</graphml>

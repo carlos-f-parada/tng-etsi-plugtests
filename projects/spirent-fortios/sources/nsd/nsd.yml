@@ -1,0 +1,53 @@
+descriptor_version: "1.0"
+vendor: "spirent-fortios"
+name: "spirent-fortios"
+version: "0.1"
+author: "Thomas Soenen"
+description: "spirent-fortios"
+##
+## The various network functions this service
+## is composed of.
+##
+network_functions:
+  - vnf_id: "fortios"
+    vnf_vendor: "fortios"
+    vnf_name: "fort-vnf"
+    vnf_version: "0.1"
+  - vnf_id: "spirent"
+    vnf_vendor: "spirent"
+    vnf_name: "stcv-vnf"
+    vnf_version: "0.1"
+
+##
+## The NS connection points to the
+## outside world.
+##
+connection_points:
+  - id: "mgmt"
+    interface: "ipv4"
+    type: "management"
+  - id: "out"
+    interface: "ipv4"
+    type: "external"
+
+##
+## The virtual links that interconnect
+## the different connections points.
+##
+virtual_links:
+  - id: "vlmgmt"
+    connectivity_type: "E-LAN"
+    connection_points_reference:
+      - "fortios:cpmgmt"
+      - "spirent:cpmgmt"
+      - "mgmt"
+  - id: "middle"
+    connectivity_type: "E-Line"
+    connection_points_reference:
+      - "spirent:cpoutput"
+      - "fortios:east"
+  - id: "out"
+    connectivity_type: "E-Line"
+    connection_points_reference:
+      - "out"
+      - "fortios:west"

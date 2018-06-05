@@ -1,0 +1,72 @@
+name: cloud_classifier
+description: heimdall cloud classifier
+descriptor_version: vnfd-schema-01
+vendor: it-aveiro
+version: '1.0'
+author: Eduardo Sousa :@ it-aveiro
+connection_points:
+- id: mgmt_cp
+  interface: ipv4
+  type: management
+- id: class_data_cp
+  interface: ipv4
+  type: internal
+# - id: non_intrusive_cp
+#   interface: ipv4
+#   type: external
+# - id: intrusive_cp
+#   interface: ipv4
+#   type: external
+virtual_deployment_units:
+- id: cloud_classifier_vdu
+  user_data: |
+    #cloud-config
+    password: sec
+    chpasswd: { expire: False }
+    ssh_pwauth: True"
+  resource_requirements:
+    cpu:
+      vcpus: 1
+    memory:
+      size: 2
+      size_unit: GB
+    storage:
+      size: 4
+      size_unit: GB
+  vm_image: classifier_gw
+  vm_image_format: qcow2
+  vm_image_md5: '36151153339fd050fab1af89e70df61b'
+  connection_points:
+  - id: eth0
+    interface: ipv4
+    type: management
+  - id: eth1
+    interface: ipv4
+    type: internal
+  # - id: eth2
+  #   interface: ipv4
+  #   type: internal
+  # - id: eth3
+  #   interface: ipv4
+  #   type: internal  
+virtual_links:
+- connection_points_reference:
+  - cloud_classifier_vdu:eth0
+  - mgmt_cp
+  connectivity_type: E-LAN
+  id: mgmt
+- connection_points_reference:
+  - cloud_classifier_vdu:eth1
+  - class_data_cp
+  connectivity_type: E-Line
+  id: class_data
+# - connection_points_reference:
+#   - cloud_classifier_vdu:eth2
+#   - non_intrusive_cp
+#   connectivity_type: E-Line
+#   id: non_intrusive
+# - connection_points_reference:
+#   - cloud_classifier_vdu:eth3
+#   - intrusive_cp
+#   connectivity_type: E-Line
+#   id: intrusive

@@ -1,3 +1,4 @@
 *.son
 projects/graphs
 projects/test_ws
+.DS_Store

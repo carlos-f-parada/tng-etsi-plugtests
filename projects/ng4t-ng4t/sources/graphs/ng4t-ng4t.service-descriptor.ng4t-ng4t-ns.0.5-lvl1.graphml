@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="type" attr.type="string" for="edge" id="d8" />
+  <key attr.name="label" attr.type="string" for="edge" id="d7" />
+  <key attr.name="level" attr.type="long" for="edge" id="d6" />
+  <key attr.name="node_id" attr.type="string" for="node" id="d5" />
+  <key attr.name="label" attr.type="string" for="node" id="d4" />
+  <key attr.name="level" attr.type="long" for="node" id="d3" />
+  <key attr.name="node_label" attr.type="string" for="node" id="d2" />
+  <key attr.name="type" attr.type="string" for="node" id="d1" />
+  <key attr.name="parent_id" attr.type="string" for="node" id="d0" />
+  <graph edgedefault="undirected">
+    <node id="vnf_ng40_1:cpsgi">
+      <data key="d0">ng4t-ng4t.service-descriptor.ng4t-ng4t-ns.0.5</data>
+      <data key="d1">iface</data>
+      <data key="d2">ng40-vtester1</data>
+      <data key="d3">1</data>
+      <data key="d4">cpsgi</data>
+      <data key="d5">ng4t.ng40-vtester1.0.5</data>
+    </node>
+    <node id="vnf_ng40_2:cpsgi">
+      <data key="d0">ng4t-ng4t.service-descriptor.ng4t-ng4t-ns.0.5</data>
+      <data key="d1">iface</data>
+      <data key="d2">ng40-vtester2</data>
+      <data key="d3">1</data>
+      <data key="d4">cpsgi</data>
+      <data key="d5">ng4t.ng40-vtester2.0.5</data>
+    </node>
+    <edge source="vnf_ng40_1:cpsgi" target="vnf_ng40_2:cpsgi">
+      <data key="d6">1</data>
+      <data key="d7">vlsgi</data>
+      <data key="d8">iface</data>
+    </edge>
+  </graph>
+</graphml>
