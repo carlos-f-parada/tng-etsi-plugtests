@@ -3,11 +3,11 @@
 ## VNF descriptor.
 ##
 descriptor_version: "vnfd-schema-01"
-vendor: "ng4t"
-name: "ng40-vtester"
+vendor: "eurecom"
+name: "oai"
 version: "0.5"
 author: "Carlos Parada :@ Altice Labs"
-description: "NG40 vTester"
+description: "EURECOM OAI"
 
 ##
 ## The virtual deployment unit.
@@ -25,7 +25,7 @@ virtual_deployment_units:
         size: 4
         size_unit: "GB"
       storage:
-        size: 16
+        size: 20
         size_unit: "GB"
     connection_points:
       - id: "ens3"
@@ -97,9 +97,9 @@ connection_points:
     type: "internal"
 
 #function_specific_managers:
-#  - id: "sonfsmplugtestng4tcss1"
+#  - id: "sonfsmplugtestoaicss1"
 #    description: "FSM to do a first FSM test"
-#    image: "sonatanfv/plugtest-ng4t-fsm-css"
+#    image: "sonatanfv/plugtest-oai-fsm-css"
 #    options:
 #      - key: "type"
 #        value: "start"
