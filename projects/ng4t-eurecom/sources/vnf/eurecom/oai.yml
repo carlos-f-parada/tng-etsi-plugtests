@@ -17,7 +17,7 @@ virtual_deployment_units:
 #    vm_image: "http://172.22.1.1/NFVPLU3/VNFs/OpenairInterface/eurecom-mmespgw.compressed.qcow2"
     vm_image: "http://www.google.com"
     vm_image_format: "qcow2"
-    vm_image_md5: 'c1fb50efd216a1674289dfb2b9114af4'
+    vm_image_md5: '3aff5ae568ec21ef29ae7c5e77fdd05d'
     resource_requirements:
       cpu:
         vcpus: 2
