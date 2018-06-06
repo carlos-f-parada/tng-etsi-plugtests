@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="type" attr.type="string" for="edge" id="d8" />
+  <key attr.name="level" attr.type="long" for="edge" id="d7" />
+  <key attr.name="label" attr.type="string" for="edge" id="d6" />
+  <key attr.name="type" attr.type="string" for="node" id="d5" />
+  <key attr.name="level" attr.type="long" for="node" id="d4" />
+  <key attr.name="label" attr.type="string" for="node" id="d3" />
+  <key attr.name="parent_id" attr.type="string" for="node" id="d2" />
+  <key attr.name="node_label" attr.type="string" for="node" id="d1" />
+  <key attr.name="node_id" attr.type="string" for="node" id="d0" />
+  <graph edgedefault="undirected">
+    <node id="vnf_oai:cps1mme">
+      <data key="d0">eurecom.oai.0.5</data>
+      <data key="d1">oai</data>
+      <data key="d2">ng4t_ran-eurecom_epc-ng4t_hss.service-descriptor.ng4t_ran-eurecom_epc-ng4t_hss-ns.0.5</data>
+      <data key="d3">cps1mme</data>
+      <data key="d4">1</data>
+      <data key="d5">br-iface</data>
+    </node>
+    <node id="vnf_oai:cps1u">
+      <data key="d0">eurecom.oai.0.5</data>
+      <data key="d1">oai</data>
+      <data key="d2">ng4t_ran-eurecom_epc-ng4t_hss.service-descriptor.ng4t_ran-eurecom_epc-ng4t_hss-ns.0.5</data>
+      <data key="d3">cps1u</data>
+      <data key="d4">1</data>
+      <data key="d5">br-iface</data>
+    </node>
+    <node id="vnf_oai:cpmgmt">
+      <data key="d0">eurecom.oai.0.5</data>
+      <data key="d1">oai</data>
+      <data key="d2">ng4t_ran-eurecom_epc-ng4t_hss.service-descriptor.ng4t_ran-eurecom_epc-ng4t_hss-ns.0.5</data>
+      <data key="d3">cpmgmt</data>
+      <data key="d4">1</data>
+      <data key="d5">br-iface</data>
+    </node>
+    <node id="vnf_ng40_ran:cps6">
+      <data key="d0">ng4t.ng40-vtester_ran.0.5</data>
+      <data key="d1">ng40-vtester_ran</data>
+      <data key="d2">ng4t_ran-eurecom_epc-ng4t_hss.service-descriptor.ng4t_ran-eurecom_epc-ng4t_hss-ns.0.5</data>
+      <data key="d3">cps6</data>
+      <data key="d4">1</data>
+      <data key="d5">br-iface</data>
+    </node>
+    <node id="vnf_oai:cpsgi">
+      <data key="d0">eurecom.oai.0.5</data>
+      <data key="d1">oai</data>
+      <data key="d2">ng4t_ran-eurecom_epc-ng4t_hss.service-descriptor.ng4t_ran-eurecom_epc-ng4t_hss-ns.0.5</data>
+      <data key="d3">cpsgi</data>
+      <data key="d4">1</data>
+      <data key="d5">iface</data>
+    </node>
+    <node id="vnf_ng40_hss:cpmgmt">
+      <data key="d0">ng4t.ng40-vtester_hss.0.5</data>
+      <data key="d1">ng40-vtester_hss</data>
+      <data key="d2">ng4t_ran-eurecom_epc-ng4t_hss.service-descriptor.ng4t_ran-eurecom_epc-ng4t_hss-ns.0.5</data>
+      <data key="d3">cpmgmt</data>
+      <data key="d4">1</data>
+      <data key="d5">br-iface</data>
+    </node>
+    <node id="br-vls1mmes1us6">
+      <data key="d3">br-vls1mmes1us6</data>
+      <data key="d4">1</data>
+      <data key="d2">ng4t_ran-eurecom_epc-ng4t_hss.service-descriptor.ng4t_ran-eurecom_epc-ng4t_hss-ns.0.5</data>
+      <data key="d5">bridge</data>
+    </node>
+    <node id="vnf_oai:cps6">
+      <data key="d0">eurecom.oai.0.5</data>
+      <data key="d1">oai</data>
+      <data key="d2">ng4t_ran-eurecom_epc-ng4t_hss.service-descriptor.ng4t_ran-eurecom_epc-ng4t_hss-ns.0.5</data>
+      <data key="d3">cps6</data>
+      <data key="d4">1</data>
+      <data key="d5">br-iface</data>
+    </node>
+    <node id="vnf_ng40_ran:cpsgi">
+      <data key="d0">ng4t.ng40-vtester_ran.0.5</data>
+      <data key="d1">ng40-vtester_ran</data>
+      <data key="d2">ng4t_ran-eurecom_epc-ng4t_hss.service-descriptor.ng4t_ran-eurecom_epc-ng4t_hss-ns.0.5</data>
+      <data key="d3">cpsgi</data>
+      <data key="d4">1</data>
+      <data key="d5">iface</data>
+    </node>
+    <node id="nscpmgmt">
+      <data key="d0">ng4t_ran-eurecom_epc-ng4t_hss.service-descriptor.ng4t_ran-eurecom_epc-ng4t_hss-ns.0.5</data>
+      <data key="d1">ng4t_ran-eurecom_epc-ng4t_hss-ns</data>
+      <data key="d2" />
+      <data key="d3">nscpmgmt</data>
+      <data key="d4">0</data>
+      <data key="d5">br-iface</data>
+    </node>
+    <node id="vnf_ng40_ran:cps1mme">
+      <data key="d0">ng4t.ng40-vtester_ran.0.5</data>
+      <data key="d1">ng40-vtester_ran</data>
+      <data key="d2">ng4t_ran-eurecom_epc-ng4t_hss.service-descriptor.ng4t_ran-eurecom_epc-ng4t_hss-ns.0.5</data>
+      <data key="d3">cps1mme</data>
+      <data key="d4">1</data>
+      <data key="d5">br-iface</data>
+    </node>
+    <node id="br-vlmgmt">
+      <data key="d3">br-vlmgmt</data>
+      <data key="d4">1</data>
+      <data key="d2">ng4t_ran-eurecom_epc-ng4t_hss.service-descriptor.ng4t_ran-eurecom_epc-ng4t_hss-ns.0.5</data>
+      <data key="d5">bridge</data>
+    </node>
+    <node id="vnf_ng40_ran:cps1u">
+      <data key="d0">ng4t.ng40-vtester_ran.0.5</data>
+      <data key="d1">ng40-vtester_ran</data>
+      <data key="d2">ng4t_ran-eurecom_epc-ng4t_hss.service-descriptor.ng4t_ran-eurecom_epc-ng4t_hss-ns.0.5</data>
+      <data key="d3">cps1u</data>
+      <data key="d4">1</data>
+      <data key="d5">br-iface</data>
+    </node>
+    <node id="vnf_ng40_ran:cpmgmt">
+      <data key="d0">ng4t.ng40-vtester_ran.0.5</data>
+      <data key="d1">ng40-vtester_ran</data>
+      <data key="d2">ng4t_ran-eurecom_epc-ng4t_hss.service-descriptor.ng4t_ran-eurecom_epc-ng4t_hss-ns.0.5</data>
+      <data key="d3">cpmgmt</data>
+      <data key="d4">1</data>
+      <data key="d5">br-iface</data>
+    </node>
+    <edge source="vnf_oai:cps1mme" target="vnf_oai:cps6">
+      <data key="d6">vnf_oai:cps6-vnf_oai:cps1mme</data>
+      <data key="d7">1</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_oai:cps1mme" target="vnf_oai:cps1u">
+      <data key="d6">vnf_oai:cps1u-vnf_oai:cps1mme</data>
+      <data key="d7">1</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_oai:cps1mme" target="br-vls1mmes1us6">
+      <data key="d6">vls1mmes1us6</data>
+      <data key="d7">1</data>
+      <data key="d8">br-iface</data>
+    </edge>
+    <edge source="vnf_oai:cps1mme" target="vnf_oai:cpmgmt">
+      <data key="d6">vnf_oai:cpmgmt-vnf_oai:cps1mme</data>
+      <data key="d7">1</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_oai:cps1mme" target="vnf_oai:cpsgi">
+      <data key="d6">vnf_oai:cpsgi-vnf_oai:cps1mme</data>
+      <data key="d7">1</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_oai:cps1u" target="vnf_oai:cps6">
+      <data key="d6">vnf_oai:cps6-vnf_oai:cps1u</data>
+      <data key="d7">1</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_oai:cps1u" target="br-vls1mmes1us6">
+      <data key="d6">vls1mmes1us6</data>
+      <data key="d7">1</data>
+      <data key="d8">br-iface</data>
+    </edge>
+    <edge source="vnf_oai:cps1u" target="vnf_oai:cpmgmt">
+      <data key="d6">vnf_oai:cpmgmt-vnf_oai:cps1u</data>
+      <data key="d7">1</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_oai:cps1u" target="vnf_oai:cpsgi">
+      <data key="d6">vnf_oai:cpsgi-vnf_oai:cps1u</data>
+      <data key="d7">1</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_oai:cpmgmt" target="br-vlmgmt">
+      <data key="d6">vlmgmt</data>
+      <data key="d7">1</data>
+      <data key="d8">br-iface</data>
+    </edge>
+    <edge source="vnf_oai:cpmgmt" target="vnf_oai:cps6">
+      <data key="d6">vnf_oai:cps6-vnf_oai:cpmgmt</data>
+      <data key="d7">1</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_oai:cpmgmt" target="vnf_oai:cpsgi">
+      <data key="d6">vnf_oai:cpsgi-vnf_oai:cpmgmt</data>
+      <data key="d7">1</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_ng40_ran:cps6" target="vnf_ng40_ran:cps1mme">
+      <data key="d6">vnf_ng40_ran:cps1mme-vnf_ng40_ran:cps6</data>
+      <data key="d7">1</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_ng40_ran:cps6" target="vnf_ng40_ran:cps1u">
+      <data key="d6">vnf_ng40_ran:cps1u-vnf_ng40_ran:cps6</data>
+      <data key="d7">1</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_ng40_ran:cps6" target="br-vls1mmes1us6">
+      <data key="d6">vls1mmes1us6</data>
+      <data key="d7">1</data>
+      <data key="d8">br-iface</data>
+    </edge>
+    <edge source="vnf_ng40_ran:cps6" target="vnf_ng40_ran:cpmgmt">
+      <data key="d6">vnf_ng40_ran:cpmgmt-vnf_ng40_ran:cps6</data>
+      <data key="d7">1</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_ng40_ran:cps6" target="vnf_ng40_ran:cpsgi">
+      <data key="d6">vnf_ng40_ran:cpsgi-vnf_ng40_ran:cps6</data>
+      <data key="d7">1</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_oai:cpsgi" target="vnf_oai:cps6">
+      <data key="d6">vnf_oai:cps6-vnf_oai:cpsgi</data>
+      <data key="d7">1</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_oai:cpsgi" target="vnf_ng40_ran:cpsgi">
+      <data key="d8">iface</data>
+      <data key="d7">1</data>
+      <data key="d6">vlsgi</data>
+    </edge>
+    <edge source="vnf_ng40_hss:cpmgmt" target="br-vlmgmt">
+      <data key="d6">vlmgmt</data>
+      <data key="d7">1</data>
+      <data key="d8">br-iface</data>
+    </edge>
+    <edge source="br-vls1mmes1us6" target="vnf_ng40_ran:cps1mme">
+      <data key="d6">vls1mmes1us6</data>
+      <data key="d7">1</data>
+      <data key="d8">br-iface</data>
+    </edge>
+    <edge source="br-vls1mmes1us6" target="vnf_ng40_ran:cps1u">
+      <data key="d6">vls1mmes1us6</data>
+      <data key="d7">1</data>
+      <data key="d8">br-iface</data>
+    </edge>
+    <edge source="br-vls1mmes1us6" target="vnf_oai:cps6">
+      <data key="d6">vls1mmes1us6</data>
+      <data key="d7">1</data>
+      <data key="d8">br-iface</data>
+    </edge>
+    <edge source="vnf_ng40_ran:cpsgi" target="vnf_ng40_ran:cps1mme">
+      <data key="d6">vnf_ng40_ran:cps1mme-vnf_ng40_ran:cpsgi</data>
+      <data key="d7">1</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_ng40_ran:cpsgi" target="vnf_ng40_ran:cps1u">
+      <data key="d6">vnf_ng40_ran:cps1u-vnf_ng40_ran:cpsgi</data>
+      <data key="d7">1</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_ng40_ran:cpsgi" target="vnf_ng40_ran:cpmgmt">
+      <data key="d6">vnf_ng40_ran:cpmgmt-vnf_ng40_ran:cpsgi</data>
+      <data key="d7">1</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="nscpmgmt" target="br-vlmgmt">
+      <data key="d6">vlmgmt</data>
+      <data key="d7">1</data>
+      <data key="d8">br-iface</data>
+    </edge>
+    <edge source="vnf_ng40_ran:cps1mme" target="vnf_ng40_ran:cps1u">
+      <data key="d6">vnf_ng40_ran:cps1u-vnf_ng40_ran:cps1mme</data>
+      <data key="d7">1</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="vnf_ng40_ran:cps1mme" target="vnf_ng40_ran:cpmgmt">
+      <data key="d6">vnf_ng40_ran:cpmgmt-vnf_ng40_ran:cps1mme</data>
+      <data key="d7">1</data>
+      <data key="d8">iface</data>
+    </edge>
+    <edge source="br-vlmgmt" target="vnf_ng40_ran:cpmgmt">
+      <data key="d6">vlmgmt</data>
+      <data key="d7">1</data>
+      <data key="d8">br-iface</data>
+    </edge>
+    <edge source="vnf_ng40_ran:cps1u" target="vnf_ng40_ran:cpmgmt">
+      <data key="d6">vnf_ng40_ran:cpmgmt-vnf_ng40_ran:cps1u</data>
+      <data key="d7">1</data>
+      <data key="d8">iface</data>
+    </edge>
+  </graph>
+</graphml>

@@ -1,0 +1,91 @@
+descriptor_version: "1.0"
+vendor: "ng4t_ran-eurecom_epc-ng4t_hss.service-descriptor"
+name: "ng4t_ran-eurecom_epc-ng4t_hss-ns"
+version: "0.5"
+author: "Carlos Parada"
+description: "Descriptor to package NG4T-Eurecom"
+
+##
+## The various network functions this service
+## is composed of.
+##
+network_functions:
+  - vnf_id: "vnf_ng40_ran"
+    vnf_vendor: "ng4t"
+    vnf_name: "ng40-vtester_ran"
+    vnf_version: "0.5"
+  - vnf_id: "vnf_ng40_hss"
+    vnf_vendor: "ng4t"
+    vnf_name: "ng40-vtester_hss"
+    vnf_version: "0.5"
+  - vnf_id: "vnf_oai"
+    vnf_vendor: "eurecom"
+    vnf_name: "oai"
+    vnf_version: "0.5"
+
+##
+## The NS connection points to the
+## outside world.
+##
+connection_points:
+  - id: "nscpmgmt"
+    interface: "ipv4"
+    type: "management"
+#  - id: "nscps1mme"
+#    interface: "ipv4"
+#    type: "internal"
+#  - id: "nscps1u"
+#    interface: "ipv4"
+#    type: "internal"
+#  - id: "nscpsgi"
+#    interface: "ipv4"
+#    type: "internal"
+#  - id: "nscps11"
+#    interface: "ipv4"
+#    type: "internal"
+
+##
+## The virtual links that interconnect
+## the different connections points.
+##
+virtual_links:
+  - id: "vlmgmt"
+    connectivity_type: "E-LAN"
+    connection_points_reference:
+      - "vnf_ng40_ran:cpmgmt"
+      - "vnf_ng40_hss:cpmgmt"
+      - "vnf_oai:cpmgmt"
+      - "nscpmgmt"
+  - id: "vls1mmes1us6"
+    connectivity_type: "E-LAN"
+    connection_points_reference:
+      - "vnf_ng40_ran:cps1mme"
+      - "vnf_ng40_ran:cps1u"
+      - "vnf_ng40_ran:cps6"
+#      - "vnf_ng40_hss:cps1mme"
+#      - "vnf_ng40_hss:cps1u"
+#      - "vnf_ng40_hss:cps6"
+      - "vnf_oai:cps1mme"
+      - "vnf_oai:cps1u"
+      - "vnf_oai:cps6"
+#      - "nscps1mmes1us6"
+#  - id: "vl1u"
+#    connectivity_type: "E-Line"
+#    connection_points_reference:
+#      - "vnf_ng40:cps1u"
+#      - "vnf_oai:cps1u"
+#      - "nscps1u"
+  - id: "vlsgi"
+    connectivity_type: "E-Line"
+    connection_points_reference:
+      - "vnf_ng40_ran:cpsgi"
+      - "vnf_oai:cpsgi"
+#      - "nscpsgi"
+#  - id: "vls11"
+#    connectivity_type: "E-Line"
+#    connection_points_reference:
+#      - "vnf_ng40_ran:cps11"
+#      - "vnf_ng40_hss:cps11"
+#      - "vnf_oai:cps11"
+#      - "nscps11"
+
