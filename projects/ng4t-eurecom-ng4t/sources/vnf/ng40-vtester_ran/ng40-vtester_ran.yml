@@ -17,7 +17,7 @@ virtual_deployment_units:
 #    vm_image: "http://172.22.1.1/NFVPLU3/VNFs/ng4T/ng40vTester_v1.0.qcow2"
     vm_image: "http://www.google.com"
     vm_image_format: "qcow2"
-    vm_image_md5: '9b5f1cca8affd8ba76cf15bd307e59d0'
+    vm_image_md5: 'afb934037cf3b471f11af12bbd775dd0'
     resource_requirements:
       cpu:
         vcpus: 2
